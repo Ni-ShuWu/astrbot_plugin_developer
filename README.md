@@ -14,10 +14,27 @@
 
 ## 使用方式
 
-1. 将 `astrbot_plugin_developer.md` 内容作为 Skill 导入你的Agent执行器
+1. 将 [SKILL-CN/SKILL.md](SKILL-CN/SKILL.md) 内容作为 Skill 导入你的Agent执行器（其他语言见下方「多语言版本」）
 2. 向Agent描述你想要开发的 AstrBot 插件需求
 3. Agent将从 Phase 1 开始逐步分析、设计并实现插件
 4. 每个阶段结束后，Agent会等待你的确认，再进入下一阶段
+
+## 多语言版本
+
+| 语言 | 文件 |
+|------|------|
+| 简体中文 | [SKILL-CN/SKILL.md](SKILL-CN/SKILL.md) |
+| English | [SKILL-EN/SKILL.md](SKILL-EN/SKILL.md) |
+| 繁體中文 | [SKILL-TW/SKILL.md](SKILL-TW/SKILL.md) |
+| 日本語 | [SKILL-JA/SKILL.md](SKILL-JA/SKILL.md) |
+| 한국어 | [SKILL-KO/SKILL.md](SKILL-KO/SKILL.md) |
+| Русский | [SKILL-RU/SKILL.md](SKILL-RU/SKILL.md) |
+| Español | [SKILL-ES/SKILL.md](SKILL-ES/SKILL.md) |
+| Français | [SKILL-FR/SKILL.md](SKILL-FR/SKILL.md) |
+| Deutsch | [SKILL-DE/SKILL.md](SKILL-DE/SKILL.md) |
+| Português | [SKILL-PT/SKILL.md](SKILL-PT/SKILL.md) |
+
+各语言版本结构完全一致（383 行，章节与 Phase 一一对应），内容以简体中文版为准。
 
 ## 开发流程总览
 
@@ -41,10 +58,17 @@
 - AstrBot 母项目：https://github.com/AstrBotDevs/AstrBot
 - AstrBot 插件开发文档：https://docs.astrbot.app/dev/star/plugin-new
 
+## 插件检查
+
+-检查插件网络安全并核验本插件是否符合astrbot社区规范
+    - https://docs.astrbot.app/dev/plugin-market/2026-06-27.html
+
+
 ## 注意事项
 
+- 指令必须标有注释和此指令的功能
 - 所有代码严格遵循 AstrBot 开发规范
-- 禁止一次性生成完整插件，必须逐步推进
+- 禁止一次性生成完整插件，必须逐步推进，除非用户授权直接跳过
 - 每完成一个阶段，Agent会进行代码审查，发现问题会重构
 - 不要忽略Agent的提问
 - 初次生成完后可能出现代码不完整或有错误的情况，请将报错和报错内容反馈给Agent，Agent会进行修复和重构

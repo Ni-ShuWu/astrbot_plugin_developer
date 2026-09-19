@@ -300,7 +300,7 @@ metadata.yaml
 
 schema
 
-LICENSE
+LICENSE (must use the GNU AFFERO GENERAL PUBLIC LICENSE, AGPL-3.0)
 
 CHANGELOG
 
